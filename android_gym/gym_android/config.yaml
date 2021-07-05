@@ -40,14 +40,14 @@ LOGGING:
     level: DEBUG
     handlers: [console, info_file_handler, error_file_handler]
 
-# app_details:
-#     app_name: "settings_app"
-#     difficulty_level: "easy"
-#     using_intermediate_rewards: True
-#     tokens: ["Starbucks"]
-
 device_details:
   device_name: "android"
+
+app_details:
+    app_name: "settings_app"
+    difficulty_level: "easy"
+    using_intermediate_rewards: True
+    tokens: ["Starbucks"]
 
 # app_details:
 #   app_name: "split_app"
@@ -55,11 +55,11 @@ device_details:
 #   using_intermediate_rewards: True
 #   tokens: ["AppBuddy","Samsung","RatTraining","100"]
 
-app_details:
-  app_name: "alarm_app"
-  difficulty_level: "easy"
-  using_intermediate_rewards: True
-  tokens: ["7:58","9:49","6:15"]
+# app_details:
+#   app_name: "alarm_app"
+#   difficulty_level: "easy"
+#   using_intermediate_rewards: True
+#   tokens: ["7:58","9:49","6:15"]
 
 # app_details:
 #   app_name: "shopping_app"
