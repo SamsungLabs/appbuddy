@@ -5,9 +5,7 @@ import os
 import time
 import logging.config
 import traceback
-from .shopping_app import ShoppingApp
 from .alarm_app import AlarmApp
-from .split_app import SplitApp
 from .settings_app import SettingsApp
 from .android_device import AndroidDevice
 import numpy as np
@@ -72,12 +70,6 @@ class AndroidEnv(gym.Env):
         if app_name == "settings_app":
             self.app = SettingsApp(app_name, using_intermediate_rewards,
                                    difficulty_level)
-        elif app_name == "shopping_app":
-            self.app = ShoppingApp(app_name, using_intermediate_rewards,
-                                   difficulty_level)
-        elif app_name == "split_app":
-            self.app = SplitApp(app_name, using_intermediate_rewards,
-                                difficulty_level)
         elif app_name == "alarm_app":
             self.app = AlarmApp(app_name, using_intermediate_rewards,
                                 difficulty_level)
