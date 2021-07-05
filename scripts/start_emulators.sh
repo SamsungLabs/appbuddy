@@ -1,4 +1,4 @@
-var=35
+var=3
 #IMG_ID=us-docker.pkg.dev/android-emulator-268719/images/r-google-x64:30.0.23
 let port1=29998
 let port2=29999
