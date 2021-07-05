@@ -91,7 +91,7 @@ class SettingsApp(TaskableApp):
         os.system("adb -s {0} shell svc wifi enable".format(emulator_id))
         time.sleep(2)
 
-        os.system("cp app_buddy/init_state_settings_app.xml window_emulator_{0}.xml".format(emulator_id))
+        os.system("cp appbuddy/init_state_settings_app.xml window_emulator_{0}.xml".format(emulator_id))
 
     def reset_app(self, emulator_id):
         for i in range(0, 10):
