@@ -1,7 +1,7 @@
 # AppBuddy: Learning to Accomplish Tasks in Mobile Apps via Reinforcement Learning
 Human beings, even small children, quickly become adept at figuring out how to use applications on their mobile devices. Learning to use a new app is often achieved via trial-and-error, accelerated by transfer of knowledge from past experiences with like apps. The prospect of building a smarter smartphone --- one that can learn how to achieve tasks using mobile apps --- is tantalizing. In this paper we explore the use of Reinforcement Learning (RL) with the goal of advancing this aspiration. We introduce AppBuddy, an RL-based framework for learning to accomplish tasks in mobile apps. RL agents are provided with states derived from the underlying representation of on-screen elements, and rewards that are based on progress made in the task. Agents can interact with screen elements by tapping or typing. Our experimental results, over a number of mobile apps, show that RL agents can learn to accomplish multi-step tasks, as well as achieve modest generalization across different apps. We develop a platform which addresses several engineering challenges to enable an effective RL training environment. The platform includes a suite of mobile apps and benchmark tasks that supports a diversity of RL research in the mobile app setting. A video demonstration of the system is available here: https://youtu.be/UUP29BGH1ug.
 
-Paper: https://arxiv.org/abs/2106.00133
+Paper (including technical appendix): https://arxiv.org/abs/2106.00133 
 
 If you use AppBuddy in your research, please cite our paper using the following BibTeX:
 
