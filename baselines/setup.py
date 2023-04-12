@@ -1,12 +1,13 @@
+# Import the 're' and 'setuptools' modules
 import re
 from setuptools import setup, find_packages
-import sys
 
+# Check if Python version is 3.x
 if sys.version_info.major != 3:
     print('This Python is only compatible with Python 3, but you are running '
           'Python {}. The installation will likely fail.'.format(sys.version_info.major))
 
-
+# Define extra dependencies for testing and MPI support
 extras = {
     'test': [
         'filelock',
@@ -21,12 +22,15 @@ extras = {
     ]
 }
 
+# Combine all extra dependencies into a single list
 all_deps = []
 for group_name in extras:
     all_deps += extras[group_name]
 
+# Add a new 'all' group with all dependencies
 extras['all'] = all_deps
 
+# Set up the package with required dependencies and extras
 setup(name='baselines',
       packages=[package for package in find_packages()
                 if package.startswith('baselines')],
@@ -46,8 +50,7 @@ setup(name='baselines',
       author_email='gym@openai.com',
       version='0.1.6')
 
-
-# ensure there is some tensorflow build with version above 1.4
+# Check that TensorFlow is installed with a version above 1.4
 import pkg_resources
 tf_pkg = None
 for tf_pkg_name in ['tensorflow', 'tensorflow-gpu', 'tf-nightly', 'tf-nightly-gpu']:
