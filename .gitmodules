@@ -1,0 +1,3 @@
+[submodule "baselines"]
+	path = baselines
+	url = https://github.sec.samsung.net/zhiming-hu/baselines.git
